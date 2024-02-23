@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Clash Pro</title>
+    <!-- Daisy UI and Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./stylesheets/styles.css">
 </head>
-<body>
-    
+
+<body class="">
+    <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <!-- Home Page -->
+        <section class="home min-h-screen flex justify-center items-center">
+            <div class="flex flex-col items-center gap-12">
+                <h1 class="font-anton font-normal text-white text-[170px]">ALPHABET CLASH</h1>
+                <p class="font-poppins font-medium text-white text-[22px]">Unleash Your Keyboard Clasher : Press "Enter"
+                    to play</p>
+                <button class="btn text-black bg-white w-[175px] h-[73px] text-2xl font-semibold font-poppins">Play
+                    Now</button>
+            </div>
+        </section>
+
+
+        <!-- GamePlay Page -->
+        <section class="play-ground hidden">
+            <div class="flex flex-col items-center justify-center gap-20 pt-20">
+                <!-- Playground Screen -->
+                <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+                    <div class="flex justify-center">
+                        <p class="bg-[#2F2941] px-6 pb-3 rounded-b-xl text-white font-poppins font-medium text-lg">Don't watch keyboard while playing...</p>
+                    </div>
+                    <div class="flex justify-center items-center h-full">
+                        <p class="text-black text-9xl font-poppins font-semibold">Y</p>
+                    </div>
+                </div>
+
+                <!-- Keyboard -->
+                <div>
+                    <div class="flex justify-center gap-2 my-2 w-full">
+                        <kbd class="kbd font-inter font-medium text-xl">q</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">w</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">e</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">r</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">t</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">y</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">u</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">i</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">o</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">p</kbd>
+                    </div>
+                    <div class="flex justify-center gap-2 my-2 w-full">
+                        <kbd class="kbd font-inter font-medium text-xl">a</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">s</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">d</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">f</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">g</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">h</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">j</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">k</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">l</kbd>
+                    </div>
+                    <div class="flex justify-center gap-2 my-2 w-full">
+                        <kbd class="kbd font-inter font-medium text-xl">z</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">x</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">c</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">v</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">b</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">n</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">m</kbd>
+                        <kbd class="kbd font-inter font-medium text-xl">/</kbd>
+                    </div>
+                </div>
+
+                <!-- Lifeline/Score -->
+                <div class="flex justify-between w-[1024px]">
+                    <button class="btn rounded-full bg-[#A830E5] text-white px-4 border-none font-inter font-medium text-xl">
+                        Life
+                        <img src="./images/heart.svg" alt="">
+                        <span>1</span>
+                    </button>
+                    <button class="btn rounded-full bg-[#5e0bd5] text-white px-4 border-none font-inter font-medium text-xl">
+                        Score
+                        <img src="./images/dollar.svg" alt="">
+                        <span>1</span>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Score Board Page -->
+        <section class="score flex justify-center items-center min-h-screen hidden">
+            <div class="text-white text-center space-y-6  p-8 rounded-xl" style="background: linear-gradient(136.67deg, rgba(255, 255, 255, 0.56) 0%,rgba(152, 151, 151, 0) 102.037%); border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 16px;">
+                <h1 class="text-8xl text-white">
+                    <span class="font-semibold font-poppins">Score:</span>
+                    <span class="font-medium font-poppins">14</span>
+                </h1>
+                <button class="btn font-poppins font-bold text-2xl w-[175px] h-[61px]">Play Again</button>
+                <p class="font-poppins font-medium text-xl">Consistancy is The Main Key of Your Excellence</p>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
